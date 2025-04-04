@@ -195,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <form id="contactForm" class="contact-form" action="https://formsubmit.co/el/ju" method="POST">
+            <form id="contactForm" class="contact-form" action="https://formsubmit.co/el/jukimu" method="POST">
                 <div class="form-group">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" required>
@@ -208,8 +208,17 @@
                     <label for="message">Mensaje</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
+            
+                <!-- Campo antispam -->
+                <input type="text" name="_honey" style="display:none">
+                
+                <!-- Evita el captcha de FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+            
+                <!-- Redirección después de enviar -->
+            
                 <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-            </form>
+            </form>            
         </div>
     </section>
 
