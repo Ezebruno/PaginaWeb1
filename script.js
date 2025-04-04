@@ -23,21 +23,9 @@ function scrollToTop() {
 }
 
 // Contact form handling
+
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const formData = {
-        name: contactForm.name.value,
-        email: contactForm.email.value,
-        message: contactForm.message.value
-    };
-    
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
+contactForm.addEventListener('submit', () => {
     alert('¡Gracias por contactarnos! Te responderemos pronto.');
-    
-    // Reset form
-    contactForm.reset();
 });
