@@ -23,9 +23,12 @@ function scrollToTop() {
 }
 
 // Contact form handling
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita la recarga de la página
 
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', () => {
     alert('¡Gracias por contactarnos! Te responderemos pronto.');
+
+    // Opcional: Enviar el formulario manualmente
+    this.submit();
 });
+
